@@ -1,0 +1,42 @@
+
+<!-- thuộc tính srcset hiển thị hình ảnh theo độ phân giải tùy chọn -->
+<div>
+
+     <img src="img/turkey.png" alt=""
+     
+         srcset="/images/turkey-400px.jpg 2x,
+     
+          /images/turkey-600px.jpg 3x" ><br>
+</div>
+<!-- w-descriptor
+
+Để trang web có khả năng tự lựa chọn ảnh theo kích thước của cửa sổ trình duyệt (browser viewport) hay kích thước của màn hình (screen) (từ đây gọi chung là cửa sổ trình duyệt) chúng ta sẽ sử dụng thuộc tính srcset kết hợp với giá trị w-descriptor. w-descriptor là độ rộng của cửa sổ tính bằng pixel (actual pixel width). Kĩ thuật này được gọi là lựa chọn hình ảnh theo kích thước khung nhìn (viewport-based selection). -->
+<img src="img/strawberries-640.png" alt="baskets of ripe strawberries">
+<!-- 
+     <img src="img/strawberries-640.jpg"
+     
+     alt="baskets of ripe strawberries"
+     
+     srcset="strawberries-480.jpg 480w,
+     
+          strawberries-960.jpg 960w,
+     
+          strawberries-1280.jpg 1280w,
+     
+          strawberries-2400.jpg 2400w"
+     
+     sizes="50vw"> <br>
+
+ -->
+<!-- Art direction (phần tử picture) -->
+<picture>
+
+     <source media="(min-width: 1024px)" srcset="img/icecream-large.jpg">
+
+     <source media="(min-width: 760px)" srcset="img/icecream-medium.jpg">
+
+     <img src="img/icecream-small.jpg" alt="hand holding ice cream cone and
+
+     text that reads Savor the Summer">
+
+</picture>
